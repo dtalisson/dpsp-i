@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP  -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="assets/js/geral.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <title>PRODUTO PENDENTE</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5 mb-5" id="textCrud"></h2>
+        <div class="mb-8">
+            <div class="row">
+                <div class="form-group col-md-4 mb-3">
+                    <label for="nomeResponsavel">Nome do responsável:</label>
+                    <input type="text" name="nomeResponsavel" class="form-control" id="nomeResponsavel" placeholder="Insira o nome do responsável pela venda..">
+                </div>
+                <!-- NAME -->
+                <div class="form-group col-md-4 mb-3">
+                    <label for="nomeCliente">Nome do cliente:</label>
+                    <input type="text" name="nomeCliente" class="form-control" id="nomeCliente" placeholder="Insira o nome do cliente..">
+                </div>
+                <!-- CASH  -->
+                <div class="form-group col-md-4 mb-3">
+                    <label for="cod"> Cód Item:</label>
+                    <input type="number" name="cod" class="form-control" id="cod" placeholder="Insira o código do item..">
+                </div>
+                <!-- NOME ITEM -->
+                <div class="form-group col-md-4 mb-3">
+                    <label for="cod"> Nome do Item:</label>
+                    <input type="text" name="nomeItem" class="form-control" id="nomeItem" placeholder="Insira o nome do item..">
+                </div>
+                <!-- HORARIO -->
+                <div class="form-group col-md-4 mb-3">
+                    <label for="quantidade"> Quantidade:</label>
+                    <input type="number" name="quantidade" class="form-control" id="quantidade" placeholder="Informe a quantidade pedidas..">
+                </div>
+                <!-- OPTIONS -->
+                <div class="form-group col-md-4 mb-3">
+                    <label for="phone">Telefone:</label>
+                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Por ex: (00) 00000-0000">
+                </div>
+                <div class="col-lg-12 mt-5">
+                    <button class="btn btn-success" id="Submit" onclick="AddData()">
+                    Add Data</button>
+                    <button class="btn btn-primary" id="Update">
+                    Update</button>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5">
+            <div class="col-12">
+                <table class="table table-dark table-bordered table-responsive" id="crudTable">
+                    <thead>
+                        <tr>
+                            <th>Nome RESP.</th>
+                            <th>Nome Cliente</th>
+                            <th>Cód I.</th>
+                            <th>Nome Item</th>
+                            <th>Quantidade</th>
+                            <th>Telefone</th>
+
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
