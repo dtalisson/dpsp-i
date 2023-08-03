@@ -4,7 +4,7 @@
     font-family: sans-serif, Times, 'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif, 'Arial Narrow', Arial, sans-serif, Courier, monospace;
 }
 body { 
-    background-color: #B0C7DD
+    background-color: #4aa2f5
 }
 #Update { 
     display: none;
@@ -38,7 +38,9 @@ label {
 .col-12 { 
     font-size: 1rem;
     padding: .3rem;
+    display: flex;
 }
+
 #textCrud { 
     text-align: center;
     font-size: 2.5rem;
